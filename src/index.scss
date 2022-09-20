@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;900&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Raleway', 'Roboto', 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: azure;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.container {
+  .front {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .middle {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .ground {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .top-base {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  .top-content {
+    margin: auto;
+    min-height: 100vh;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      margin: 5px 0;
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase;
+      text-shadow: 0 0 20px #9d822b;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-shadow: 0 0 20px #9d822b;
+      letter-spacing: 0.3rem;
+    }
+  }
+
+  .bottom-base {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  .bottom-content {
+    margin: auto;
+    min-height: 100vh;
+    max-width: 50vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+      margin: 10px 0;
+      font-size: 2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-shadow: 0 0 20px #9d822b;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
