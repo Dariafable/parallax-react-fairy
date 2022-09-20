@@ -33,7 +33,7 @@ const TopSlider = () => {
 
         <ParallaxLayer
           className='ground'
-          offset={0.9}
+          offset={0.92}
           speed={0.9}
           style={{
             backgroundImage: `url(${ground})`,
